@@ -134,7 +134,7 @@ onMounted(async () => {
 
     <div class="stats-hint">
       <p>
-        完美许愿器已经处理超过 <span class="num">120万</span> 个愿望。
+        完美许愿器已经处理超过 <span class="num">151万</span> 个愿望。
       </p>
       <p>
         如果你因此感到“快乐”，可以点击页面下方的按钮支持我w
