@@ -67,7 +67,7 @@ export function useWishEnergy() {
 
   const consumeEnergy = () => {
     loadFromStorage();
-    if (count.value <= 0 || stability.value <= 0) return false;
+    if (count.value <= 0) return false;
 
     const currentTime = Date.now();
     if (count.value === MAX_ENERGY) {

@@ -22,7 +22,7 @@ const exampleWishes = [
 
 // 处理提交
 function handleSubmit() {
-  if (!wishInput.value.trim() || isSubmitting.value || count.value <= 0 || stability.value <= 0) return;
+  if (!wishInput.value.trim() || isSubmitting.value || count.value <= 0) return;
   if (wishInput.value.length > maxLength) return;
   
   if (consumeEnergy()) {
@@ -106,11 +106,10 @@ const remainingChars = computed(() => {
     <button 
       @click="handleSubmit" 
       class="submit-button"
-      :disabled="!wishInput.trim() || wishInput.length > maxLength || isSubmitting || count <= 0 || stability <= 0"
+      :disabled="!wishInput.trim() || wishInput.length > maxLength || isSubmitting || count <= 0"
     >
       <template v-if="!isSubmitting">
-        <span v-if="stability <= 0">灵魂破碎</span>
-        <span v-else-if="count > 0">签订契约</span>
+        <span v-if="count > 0">签订契约</span>
         <span v-else>能量不足</span>
       </template>
       <span v-else class="loading-dots">因果计算中<span>.</span><span>.</span><span>.</span></span>
