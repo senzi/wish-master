@@ -65,7 +65,7 @@
 ### 1. 克隆与安装
 
 ```bash
-git clone [https://github.com/senzi/wish-master.git](https://github.com/senzi/wish-master.git)
+git clone https://github.com/senzi/wish-master.git
 cd wish-master
 npm install
 
@@ -77,7 +77,7 @@ npm install
 
 ```env
 DEEPSEEK_API_KEY=你的API密钥
-DEEPSEEK_API_BASE_URL=[https://api.deepseek.com](https://api.deepseek.com)
+DEEPSEEK_API_BASE_URL=https://api.deepseek.com
 
 ```
 
